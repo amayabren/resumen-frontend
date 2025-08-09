@@ -1,12 +1,29 @@
-# React + Vite
+# Resumen IA con Gemini, FastAPI y React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación web que permite resumir textos usando la API gratuita de Google Gemini, guardar los resultados en una base de datos SQLite y exportarlos en PDF.
+El usuario puede editar el prompt, pegar cualquier texto y obtener un resumen claro y estructurado.
 
-Currently, two official plugins are available:
+## Tecnologías utilizadas
+### Backend (Python + FastAPI)
+FastAPI → Framework rápido para crear APIs.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+SQLite → Base de datos local y ligera para guardar resúmenes.
 
-## Expanding the ESLint configuration
+SQLAlchemy → ORM para manejar la base de datos de forma sencilla.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+google-generativeai → Cliente oficial de Google Gemini para Python.
+
+ReportLab → Generador de PDFs en Python.
+
+dotenv → Para cargar la API key desde un archivo .env.
+
+### Frontend (JavaScript + React)
+React → Librería para la interfaz de usuario.
+
+Vite → Herramienta de desarrollo rápida para React.
+
+TailwindCSS → Framework de estilos.
+
+Axios → Cliente HTTP para comunicarse con el backend.
+
+
